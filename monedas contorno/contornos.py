@@ -1,7 +1,7 @@
 import cv2
 imagenn = cv2.imread("img1.png")
 grices = cv2.cvtColor(imagenn,cv2.COLOR_BGR2GRAY)
-typoUmbral,umbral = cv2.threshold(grices, 144, 255, cv2.THRESH_BINARY)
+_,umbral = cv2.threshold(grices, 144, 255, cv2.THRESH_BINARY)
 
 # mostrar: 
 cv2.imshow("Imagen color: ",imagenn)
